@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Schneider Electric test application</title>
+  <link
+    rel="icon"
+    href="https://www.se.com/ru/shop-static/assets/css/img/favicon.ico"
+    type="image/x-icon"
+  />
+  <link rel="stylesheet" href="/icons/css/styles.css" />
+
+  <link rel="stylesheet" href="/index.css" />
+
+  <!-- <link rel="preload" href="//www.se.com/ru/ru/assets-re1/css/fonts/cyrillic/ArialRoundedMTforSE-Light_Cyrillic.woff2" as="font" type="font/woff2" crossorigin="anonymous"/> -->
+  <!--  here we insert the PDP component and its polyfills -->
+  <script type="module" src="/build/components.esm.js" data-stencil-namespace="components"></script>
+  <script nomodule src="/build/components.js" data-stencil-namespace="components"></script>
+
+  <!--  here we insert the web-ui se-components -->
+  <script type="module" src="/web-ui/se-components/se-components.esm.js" data-stencil-namespace="se-components"></script>
+  <script nomodule src="/web-ui/se-components/se-components.js" data-stencil-namespace="se-components"></script>
+
+</head>
+<body>
+<pes-app-test></pes-app-test>
+</body>
+</html>
